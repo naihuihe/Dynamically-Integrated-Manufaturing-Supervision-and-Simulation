@@ -1,1 +1,8 @@
-# D2S
+# D2S - Dynamically Integrated Manufacturing Simulation and Supervision System
+A manufacturing system software that can be used by manufacturing enterprises to 1) simulate their manufacturing processes, planning and scheduling decisions, and 2) model their systems (resources, processes and products) and create a cloud-based supervision and control platform with the integration of ERP and MES. Two modules are currently desgined for this software:
+- Modelling and simulation module - used by users to visually model a manufacturing system (from manufacturing resources, processes to products and orders) and conduct simulation. This module can be solely used as a manufacturing simulation software. However, unlike most available manufacturing simulation software (e.g., Anylogic), our simulation is driven by product orders rather than manufacturing processes. This can facilitate industrial practitioners or academic researchers to simulate manufacturing performances based on different scheduling decisions. The manufacturing system model created by this module can be exported and used by the next module to configure the integrated application platform. What is needed to develop this module:
+  - Tkinter (GUI)
+  - PyGame (Simulation)
+- Application module - using the manufacturing system model file exported from the last module, this module will automatically create a database and web platform for manufacturing enterprises to perform ERP and MES functions, e.g., dynamically supervise workshop activities, remote control automated facilities such as AGVs, handle customer orders, manage inventories, and track the production progress of a customer order. What is needed to develop this module:
+  - Flask (back-end)
+  - Javascript (front-end)
