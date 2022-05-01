@@ -225,21 +225,6 @@ class CollapsiblePane(ttk.Frame):
             widget.master = frame
             widget.pack(ConfigPanel_css.pack_item, in_ = frame)
 
-        # if label:
-        #     child = ttk.Frame(self.container)
-        #
-        #     label = Label(child, text = label)
-        #     label.pack(ConfigPanel_css.pack_item)
-        #
-        #     item.master = child
-        #     item.pack(ConfigPanel_css.pack_item, in_ = child, fill = 'x', expand = 1)
-        #
-        # else:
-        #     child = ttk.Frame(self.container)
-        #
-        #     item.master = child
-        #     item.pack(ConfigPanel_css.pack_item, in_=child, fill='x', expand=1)
-
         if kw:
             kw.update(ConfigPanel_css.grid_item)
             frame.grid(kw, in_ = self.container)
