@@ -5,7 +5,7 @@ from static.css import ConfigPanel_css
 
 class CollapsiblePanedFrame(ttk.Frame):
     '''
-    A frame used to manage sub-windows, showing of which can be opene and closed like Treeview
+    A frame used to manage sub-windows, showing of which can be opened and closed like Treeview
 
     '''
 
